@@ -1,0 +1,31 @@
+#items{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    background-color:#181818;
+    justify-content: center;
+    margin-top:8.6em;
+    margin-bottom:4em;
+    flex-wrap: wrap;
+    display: flex;
+    padding:10px 10px 10px 10px;
+}
+#undefined{
+    position: relative;
+    width:auto;
+    flex-direction: row;
+    font-size:2em;
+    display:none;
+    color:red;
+}
+@media(max-width:1000px){
+    #undefined{
+        position: relative;
+        width:auto;
+        flex-direction: row;
+        font-size:1.5em;
+
+        display:none;
+        color:red;
+    }
+}

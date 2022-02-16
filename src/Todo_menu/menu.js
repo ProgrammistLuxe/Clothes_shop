@@ -2,7 +2,6 @@ import React from 'react'
 import './menu-style.css'
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Menu_image from '../images/depositphotos_40187597-stock-photo-fishing.jpg'
 import {BrowserRouter as Router, Switch, Route, NavLink,} from 'react-router-dom'
 
 function Menu (){

@@ -1,0 +1,16 @@
+#contacts{
+    width:auto;
+    margin-left: 5%;
+    margin-top:1em;
+}
+.contacts{
+    margin-top: 1.5em;
+}
+.pay{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pay img{
+    margin-right: 1em;
+    margin-top: 1em;
+}

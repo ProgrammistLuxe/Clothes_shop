@@ -1,9 +1,15 @@
 import React from 'react'
 import './Home.css'
-function  Home(){
+import Schedule from './schedule';
+function  Home({item,key}){
     return(
         <section id="wrapper">
-            <h1>Карась</h1>
+            <p>{item.weekDay}</p>
+
+            <div>{item.schedule.map(sub => {
+                return <Schedule item={sub} key={sub.id}/>
+            })}</div> 
+          
         </section>
     )
 }

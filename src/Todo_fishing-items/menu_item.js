@@ -1,21 +1,20 @@
 import React from 'react'
 import './menu_iten-style.css'
-import Button_close from '../images/button.png'
-import '../images/загружено.png'
+
 import PropTypes from 'prop-types'
 import CloseButton from "react-bootstrap/Button";
+
 function Menu_item({item,onClick,}) {
+    const classes = ['item_text']
+    if(item.title==='средства ухода'){
+classes.push('long')
+    }
     return (
         <section id="menu_item">
-            <section className="item_header">
-            {item.name}
+            <img className="list_image" src={item.photo}/>
+           <section className={classes.join(' ')}>{item.title}</section>
             </section>
-            <section className="item_image">
-                <p> логин:{item.username}</p>
-                <p> город:{item.city}</p>
-                <p> улица:{item.street}</p>
-            </section>
-        </section>
+
     )
 }
 
